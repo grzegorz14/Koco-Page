@@ -1,0 +1,4 @@
+.shadow-borders {
+    border-radius: 20px;
+    box-shadow: 7px 0 3px -5px var(--main-border-color), -7px 0 3px -5px var(--main-border-color);
+}

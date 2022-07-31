@@ -1,0 +1,78 @@
+.about {
+    grid-row: 4;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+.about p {
+    text-align: left;
+    font-size: 1.2vw;
+    color: white;
+}
+
+.about-flex {
+    background-color: goldenrod;
+}
+.about-grid {
+    background-color: indianred;
+}
+
+.text-container {
+    margin: 30px;
+}
+.add-line {
+    margin-top: 20px;
+}
+
+.about a {
+    width: fit-content;
+    font-size: 1.2vw;
+    background-color: #343434;
+    text-decoration: none;
+    padding: 1vw;
+    color: white;
+    border-radius: 20px;
+    align-self: flex-end;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    transition: color 1s ease;
+    transition: background-color 0.7s ease;
+}
+.about a:hover {
+    color: var(--main-link-color);
+    background-color: transparent;
+}
+
+#grid-panel {
+    right: 0;
+    left: 0;
+    height: 1400px;
+    background-image: url("files/backgrounds/02.png"); 
+
+    display: grid;
+    grid-template-columns: auto 20% 20% 20% auto;
+    grid-template-rows: 3% 15% 15% 29% 18% 15%;
+    padding-top: 5%;
+    column-gap: 3%;
+    row-gap: 3%;
+}
+
+.selector-element {
+    grid-row: 5;
+    grid-column: 2;
+    background-color:royalblue;
+}
+.form-element {
+    grid-row: 5;
+    grid-column: 3;
+    background-color: goldenrod;
+}
+.issue-element {
+    grid-row: 5;
+    grid-column: 4;
+    background-color:indianred;
+}

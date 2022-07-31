@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/fontello/css/fontello.css">
+    <link rel="stylesheet" href="css/fontello/css/animation.css">
+
+    <link rel='stylesheet' href='css/01-varibles.css'>
+    <link rel='stylesheet' href='css/10-desktop.css'>
+    <link rel='stylesheet' href="css/11-about-desktop.css">
+    <link rel='stylesheet' media='(max-width:1000px)' href='css/20-mobile.css'>
+    <link rel='stylesheet' media='(max-width:1000px)' href='css//21-about-mobile.css'>
+
+    <script src='js/back.js' defer></script>
+
+    <title>AI ZSŁ - Szewczyk Grzegorz</title>
+</head>
+
+<body onload="changeBackground();">
+    <div class="menu">
+        <ul class="menu-list">
+            <li>
+                <div class="name-item shadow-borders">
+                     <a href="index.html">Pracownia 515i</a>
+                </div>
+            </li>
+            <li>
+                <div class="options-item shadow-borders">
+                     <a>o nas</a>
+                     <a>oferta</a>
+                     <a>kontakt</a>
+                </div>
+            </li>
+            <li>
+                <div class="media-item shadow-borders">
+                     <i class="icon-youtube youtube"></i>
+                     <i class="icon-facebook facebook"></i>
+                     <i class="icon-gplus gplus"></i>
+                     <i class="icon-twitter twitter"></i>
+                </div>
+            </li>
+        </ul>
+                    
+        <i class="icon-menu menu-hambucker"></i>
+    </div>
+
+
+    <div id="image-site">
+        <div class="school-description shadow-borders">
+            <div class="first-description">Najlepsza szkoła w Krakowie</div>
+            <div class="second-description">Błyskotliwi uczniowie</div>
+            <div class="third-description"><b>515i zaprasza</b></div>
+        </div>
+
+        <div class="circle-icon shadow-borders">
+            <i class="icon-spin1 animate-spin"></i>
+            <a href="index.html" class="inside-circle">ZSŁ</a>
+        </div>
+
+        <div class="clock shadow-borders">
+            <div class="hour">
+                <div id="hour-number"></div>
+                &nbsp:&nbsp
+                <div id="minute-number"></div>
+                &nbsp:&nbsp
+                <div id="second-number"></div>
+            </div>
+            <div class="date">
+                <div id="day-number"></div>
+                &nbsp/&nbsp
+                <div id="month-number"></div>
+                &nbsp/&nbsp
+                <div id="year-number"></div>
+            </div>
+            <div class="date-name">
+                <div id="weekday-name"></div>
+                &nbsp/&nbsp
+                <div id="month-name"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="grid-panel">
+        <h2 class="grid-title">Zadania omawiane na aplikacjach klienckich:</h2>
+
+        <div class="html-element grid-box-element simple-grid">
+            <div class="header-grid">
+                <h2>HTML</h2>
+            </div>
+            <div class="description">
+                <p>&lt;!DOCTYPE html&gt;</p>
+                <p>&lt;article&gt;</p>
+            </div>
+            <div class="hover-class">
+                <p>Język w którym tworzymy strony internetowe</p>
+            </div>
+        </div>
+        <div class="css-element grid-box-element">
+            <div class="header-grid">
+                <h2>CSS</h2>
+            </div>
+            <div class="description">
+                <p>display: flex;</p>
+                <p>justify-content: space-around;</p>
+            </div>
+            <div class="hover-class">
+                <p>Język w którym stylujemy nasz kod HTML</p>
+            </div>
+        </div>
+        <div class="js-element grid-box-element">
+            <div class="header-grid">
+                <h2>JS</h2>
+            </div>
+            <div class="description">
+                <p>let date = new Date();</p>
+                <p>document.GetElementById("day")</p>
+            </div>
+            <div class="hover-class">
+                <p>Język w którym dodajemy specjalne funkcjonalności do stron internetowych</p>
+            </div>
+        </div>
+        <a href="about-flex.html" class="flex-element grid-box-element">
+            <div class="header-grid">
+                <h2>Flex</h2>
+            </div>
+            <div class="description">Bez tego nie dało się żyć!</div>
+            <div class="hover-class">
+                <p>Pięknie rozmieszcza elementy na stronie</p>
+            </div>
+        </a>
+        <a href="about-grid.html" class="grid-element grid-box-element">
+            <div class="header-grid">
+                <h2>Grid</h2>
+            </div>
+            <div class="description">Bardzo przydatna siateczka</div>
+            <div class="hover-class">
+                <p>Można rozmieszczać elementy tak jak puzzle</p>
+            </div>
+        </a>
+
+        <div class="about about-grid">
+            <div class="text-container">
+                <p>Grid to jedna z wartości właściwości "display". Dzięki niemu można stworzyć siatkę, w której będziemy umieszczać elementy-dzieci.</p>
+
+                <p class="add-line">Najważniejsze właściwości rodzica to:</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: definiuje ilość kolumn i ich szerokość</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grid-template-rows: definiuje ilość rzędów i ich wysokość</p>
+    
+                <p class="add-line">Najważniejsze właściwości dziecka to:</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grid-column: określa kolumnę elementu</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grid-row: określa rząd elementu</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grid-column-start i grid-column-end: pozwala na połączenie kilku kolumn</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grid-row-start i grid-row-end: pozwala na połączenie kilku rzędów</p>
+            </div>
+            <a href="index.html">Wróć</a>
+        </div>
+
+        <div class="animation-element grid-box-element">
+            <div class="header-grid">
+                <h2>Animacja</h2>
+            </div>
+            <div class="description">Nauka pięknych animacji tylko w 515i</div>
+            <div class="hover-class">
+                <p>Dzięki nim strony wyglądają nowocześnie i ładnie</p>
+            </div>
+        </div>
+        <div class="selector-element grid-box-element">
+            <div class="header-grid">
+                <h2>Selektory</h2>
+            </div>
+            <div class="description ">:hover</div>
+            <div class="hover-class">
+                <p>Podstawa języka CSS</p>
+            </div>
+        </div>
+        <div class="form-element grid-box-element">
+            <div class="header-grid">
+                <h2>Formularze</h2>
+            </div>
+            <div class="description">Zarejestruj się już dziś!</div>
+            <div class="hover-class">
+                <p>Najładniejsze formularze tylko u Pana Kocoła</p>
+            </div>
+        </div>
+        <div class="issue-element grid-box-element">
+            <div class="header-grid">
+                <h2>Zagadnienia</h2>
+            </div>
+            <div class="description">Czyli cała reszta</div>
+            <div class="hover-class">
+                <p>To co omawiamy na lekcjach, czyli od teorii muzyki po fizykę kwantową</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <footer>
+            <div class="footer-hint">---</div>
+            <div class="footer-text">
+                <div>
+                    <p>Pracownia 515i</p>
+                    <p>Wszelkie prawa zastrzeżone 2020/2021</p>
+                </div>
+                <div>
+                    <p>+48 505505505</p>
+                    <p>napisz maila</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
